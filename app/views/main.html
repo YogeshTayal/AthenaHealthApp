@@ -1,0 +1,39 @@
+<!-- <div class="main-bg"></div> -->
+<img src="/images/careersheroimg.jpg" class="main-bg">
+
+<div class="row marketing">
+  <div>
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+        <div class="carousel-text">
+          <h4>{{slide.title}}</h4>
+          <p>{{slide.text}}</p>
+          <button>{{slide.btnText}}</button>
+        </div>
+        <img ng-src="{{slide.image}}" class="carousel-image">
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1>Hear from athenistas</h1>
+<div class="row">
+  <a ng-repeat="athenista in athenistas" class="athenista-tile col-lg-3 col-md-3 col-sm-6">
+    <!-- <div class="athenista-img"> -->
+    <!-- </div> -->
+    <img ng-src="{{athenista.image}}"
+      class="athenista-image">
+    <div class="athenista-details">
+      <h4>{{athenista.department}}</h4>
+      <p>{{athenista.name}}</p>
+      <p>{{athenista.designation}}</p>
+      <p>{{athenista.location}}</p>
+      <div class="video-icon">
+        <div class="video-btn-left">
+          <div class="video-btn-icon glyphicon glyphicon-play"></div>
+        </div>
+        <div class="video-btn-right">Watch Video</div>
+      </div>
+    </div>
+  </a>
+</div>
