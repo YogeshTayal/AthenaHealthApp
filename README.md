@@ -1,6 +1,6 @@
 # AthenaHealth
 
-This project is responsive.
+This project is responsive and is created using AngularJs.
 
 You will need node.js to run this project.
 
@@ -15,5 +15,7 @@ Follow the below mentioned steps to run it
 	$ grunt serve
 
 I have covered most of the major requirements and the rest can be done similarly using responsive bootstarp layout.
+
+The 'Products & Services' tab has submenu with options.
 
 P.S.: The 'Watch video' button in the images at the bottom is done with plain css without any image file.
